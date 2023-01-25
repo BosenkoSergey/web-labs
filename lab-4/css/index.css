@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #fff;
+}
+.wrap-header{
+    width: 80%;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon:hover{
+    background-color: #eee;
+    transition: .2s;
+    border-radius:6px;
+    cursor: pointer;
+}
+.icon div{
+    height: 3px;
+    width: 30px;
+    background-color:#333;
+    border-radius: 2px;
+}
+.icon div+div{
+    margin-top: 6px;
+}
+.content{
+    background-color: #003ecb;
+}
+.wrap-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px;
+    color:#fff;
+}
+.top-title{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 56px;
+}
+.wrapper-card{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#124dd5;
+    padding: 20px;
+}
+.card p{
+    text-align: center;
+    font-size: 14px;
+}
+.card a{
+    color:#ed974d;
+    border-bottom: 1px solid #ed974d;
+    padding-bottom: 4px;
+}
+.copm-img{
+    margin-left: -100px;
+}
+footer{
+    background-color:#333;
+    color:#fff;
+}
+.wrap-footer{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0px;
+    text-align: center;
+}
+.wrap-footer p{
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width:780px){
+    .wrap-header, .wrap-content, .wrap-footer{
+        width: 90%;
+    }
+    .wrap-content{
+        padding: 40px 0px;
+    }
+    .top-title{
+        text-align: center;
+        font-size: 16px;
+    }
+    .title{
+        font-size: 24px;
+        text-align: center;
+    }
+    .wrapper-card{
+        grid-template-columns: 100%;
+        grid-row-gap: 20px;
+    }
+    .copm-img{
+        margin-left: 0px;
+    }
+    .img{
+        order: 1;
+    }
+    .card:nth-child(1){
+        order: 2;
+    }
+    .card:nth-child(2){
+        order: 3;
+    }
+    .wrap-footer p{
+        font-size: 12px;
+    }
+}
