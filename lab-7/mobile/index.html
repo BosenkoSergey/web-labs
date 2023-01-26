@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №7</title>
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/work.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-block">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim deserunt quos, inventore doloribus,
+                eveniet nam hic iure delectus ut a, accusamus mollitia iste laboriosam ex perferendis excepturi
+                architecto asperiores. Itaque.</p>
+        </div>
+        <div class="header-block">
+            <h3>Сергій Босенко</h3>
+        </div>
+        <div>
+            <button onclick="playDefault()">Play [HTML]</button>
+            <button onclick="playCanvas()">Play [CANVAS]</button>
+        </div>
+    </header>
+    <section>
+        <div class="left-item">
+            <div class="content">
+                <div class="left-menu">
+                    <div class="left-div">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, reprehenderit provident.
+                            Voluptatem totam laborum asperiores harum, dolor magnam tenetur minus blanditiis omnis alias
+                            quasi ducimus modi autem tempora obcaecati sequi.</p>
+                    </div>
+                    <div class="left-div">
+                        <h4>Маркерний список</h4>
+                        <ul>
+                            <li>Список</li>
+                            <li>Список</li>
+                            
+                        </ul>
+                        <h4>Нумерований список</h4>
+                        <ol>
+                            <li>Список</li>
+                            <li>Список</li>
+                            
+                        </ol>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, reprehenderit provident.
+                        Voluptatem totam laborum asperiores harum, dolor magnam tenetur minus blanditiis omnis alias
+                        quasi ducimus modi autem tempora obcaecati sequi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, reprehenderit provident.
+                        Voluptatem totam laborum asperiores harum, dolor magnam tenetur minus blanditiis omnis alias
+                        quasi ducimus modi autem tempora obcaecati sequi.</p>
+                    <img class="img" src="./img.jpeg" alt="images" usemap="#workmap">
+
+                    <map name="workmap">
+                        <area shape="rect" coords="34,44,270,350" alt="Computer" href="./pages2.html">
+                       
+                      </map>
+                </div>
+            </div>
+
+            <footer>
+                <div class="block-footer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus a excepturi molestiae placeat
+                        odio minus eos ab odit.</p>
+                </div>
+                <div class="block-footer">
+                    <h3>Сергій Босенко</h3>
+                </div>
+            </footer>
+        </div>
+        <div class="rigth-item">
+            <h3>Menu</h3>
+            <p><a class="active" href="./index.html">Pages1</a></p>
+            <p><a href="./pages2.html">Pages2</a></p>
+            <p><a href="./pages3.html">Pages3</a></p>
+            <p><a href="./pages4.html">Pages4</a></p>
+            <p><a href="./pages5.html">Pages5</a></p>
+        </div>
+    </section>
+    <div id="work">
+        <div id="controls">
+            <button type="button" id="closeCanvas" onclick="closeCanvas()">Close</button>
+            <button type="button" id="startCanvas" onclick="startCanvas()">Start</button>
+            <button type="button" id="reloadCanvas" onclick="reloadCanvas()">Reload</button>
+            <button type="button" id="stopCanvas" onclick="stopCanvas()">Stop</button>
+            <p id="canvasEventsOutput"></p>
+        </div>
+        <canvas id="canvas" width="900" height="600"></canvas>
+    </div>
+    <div id="defaultWork">
+        <div id="defaultControls">
+            <button type="button" id="defaultClose" onclick="closeDefault()">Close</button>
+            <button type="button" id="defaultStart" onclick="startDefault()">Start</button>
+            <button type="button" id="defaultReload" onclick="reloadDefault()">Reload</button>
+            <button type="button" id="defaultStop" onclick="stopDefault()">Stop</button>
+            <p id="defaultEventsOutput"></p>
+        </div>
+        <div id="defaultAnimationField">
+            <div id="square-box"></div>
+        </div>
+    </div>
+    <script src="js/default.js"></script>
+    <script src="js/canvas.js"></script>
+</body>
+
+</html>
